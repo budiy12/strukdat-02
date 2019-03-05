@@ -1,9 +1,11 @@
 /**
-* Author : Asep Budiyana Muharam
-* NPM : 140810180029
-* Deskripsi : 
-* Tahun : 
+* Author    : Asep Budiyana Muharam
+* NPM       : 140810180029
+* Deskripsi : exercise-01
+* Tahun     : 2019
 */
+
+
 #include <iostream>
 #include <string.h>
 using namespace std;
@@ -19,8 +21,8 @@ int main() {
 Orang orang;
 orang.umur = 10;
 strcpy(orang.nama, "fahmi");
-// strcpy(orang.jk, "L");
-// strcpy(orang.goldar, "O");
+orang.jk = 'L';
+orang.goldar = 'O';
 cout << orang.umur << endl;
 cout << orang.nama << endl;
 cout << orang.goldar << endl;

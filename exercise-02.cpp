@@ -1,3 +1,9 @@
+/**
+* Author    : Asep Budiyana Muharam
+* NPM       : 140810180029
+* Deskripsi : exercise-02
+* Tahun     : 2019
+*/
 #include <iostream>
 #include <string.h>
 using namespace std;

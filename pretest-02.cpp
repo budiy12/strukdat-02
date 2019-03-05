@@ -34,5 +34,6 @@ int main(){
     cout<<"Masukan data cth[1 2 3 4 5] : ";
     input(arr,n);
     moveZeroToEnd(arr,n);
+    cout<<"Hasil : ";
     output(arr,n);
 }
