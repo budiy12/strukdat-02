@@ -5,10 +5,11 @@
 * Tahun     : 2019
 */
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 struct Pegawai{
-    char nip[12];
+    int nip;
     char nama[20];
     int gol;
     int gaji;
@@ -24,7 +25,14 @@ void inputPegawai(larik& pgw, int n){
     }
     cout<<endl;
 }
-void cetakDaftar(larik pgw, int n){
+void cetakDaftar(larik& pgw, int n){
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            if (pgw[j].nip>pgw[j+1].nip&&j!=n-1){
+                swap(pgw[j],pgw[j+1]);
+            }
+        }
+    }
     cout<<"Daftar Pegawai"<<endl;
     for (int i=0;i<n;i++){
         cout<<"No."<<i+1<<" "<<pgw[i].nip<<" "<<pgw[i].nama<<" "<<pgw[i].gol<<endl;
